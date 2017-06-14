@@ -3,5 +3,24 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 body.web__home__index {
-  
+  .return-web-navbar {
+    background: image-url('header-bg.png');
+    // background-color: #000;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    opacity: 0.9;
+    .container {
+      .navbar-header {}
+      .return-web-navbar-collapse {
+        ul {
+          li {
+            a {
+              color: #fff;
+              &:hover {}
+            }
+          }
+        }
+      }
+    }
+  }
 }

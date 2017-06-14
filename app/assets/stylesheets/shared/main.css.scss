@@ -1,0 +1,27 @@
+.return-web-navbar {
+  .container {
+    .navbar-header {
+      a.navbar-brand {
+        padding: 10px 15px;
+        // min-width: 4em;
+        img {
+          height: 30px;
+        }
+      }
+    }
+    .return-web-navbar-collapse {
+      ul {
+        li {
+          // min-width: 4em;
+          a {
+            // width: 7em;
+            text-align: center;
+            &:hover {
+              background-color: transparent;
+            }
+          }
+        }
+      }
+    }
+  }
+}
