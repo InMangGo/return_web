@@ -1,9 +1,10 @@
+// 导航
 .return-web-navbar {
+  margin-bottom: 0;
   .container {
     .navbar-header {
       a.navbar-brand {
         padding: 10px 15px;
-        // min-width: 4em;
         img {
           height: 30px;
         }
@@ -29,13 +30,23 @@
     }
   }
 }
-@media only screen and (max-width: 750px) {
+@media only screen and (max-width: 768px) {
+  // 导航
   .return-web-navbar {
     .container {
+      .navbar-header {
+        a.navbar-brand {
+          img {
+            height: 20px;
+          }
+        }
+      }
       .return-web-navbar-collapse {
         ul {
           li {
             a {
+              padding-top: 6px;
+              padding-bottom: 6px;
               &.nav-border {
                 box-shadow: 0 4px 0 transparent;
               }
