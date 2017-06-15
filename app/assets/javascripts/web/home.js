@@ -11,11 +11,13 @@ $(document).ready(function(){
   $('.js-text-switch li').mouseover(function(){
     returnName = $(this).find('a').data('ename')
     $(this).find('a').text(returnName)
+    $(this).find('a').addClass('nav-border')
   })
 
   $('.js-text-switch li').mouseleave(function(){
     returnName = $(this).find('a').data('name')
     $(this).find('a').text(returnName)
+    $(this).find('a').removeClass('nav-border')
   })
 
 })
