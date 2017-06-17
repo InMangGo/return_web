@@ -136,7 +136,6 @@ h4.web-subtitle {
   letter-spacing: 1em;
 }
 
-
 @media only screen and (max-width: 768px) {
   // 导航
   .return-web-navbar {
@@ -159,6 +158,88 @@ h4.web-subtitle {
               }
             }
           }
+        }
+      }
+    }
+  }
+
+  /*标题、副标题*/
+  h1.web-title {
+    font-size: 2rem;
+  }
+  h4.web-subtitle {
+    font-size: 1rem;
+  }
+}
+
+// 底部
+.jumbotron {
+  padding-top: 0;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+.footer-web {
+  margin-top: 3.5rem;
+  .footer-top {
+    padding: 5rem 0;
+    min-height: 28rem;
+    .footer-top-content {
+      max-width: 54rem;
+      margin: 0 auto;
+      color: #fff;
+      h1,h2,h3,h4 {
+        margin-bottom: 0;
+        font-weight: bold;
+      }
+      h1 {
+        margin-top: 0;
+        font-size: 5.6rem;
+      }
+      h2 {
+        margin-top: 10px;
+        letter-spacing: 10px;
+      }
+      h4 {
+        margin-bottom: 4rem;
+      }
+      p {
+        margin-bottom: 0;
+        text-align: center;
+        .footer-top-content-btn {
+          img {
+            width: 200px;
+          }
+        }
+      }
+    }
+  }
+}
+.footer-bottom {
+  margin-top: 42px;
+  padding: 16px 0;
+  color: #fff;
+  background-color: black;
+}
+@media only screen and (max-width: 750px) {
+  .footer-web {
+    .footer-top {
+      &.bg-red {
+        background-color: #E70505;
+      }
+      .footer-top-content {
+        padding: 0 10px;
+        text-align: center;
+        h1 {
+          font-size: 2.4rem;
+        }
+        h2 {
+          font-size: 2rem;
+        }
+        h3 {
+          font-size: 1.8rem;
+        }
+        h4 {
+          font-size: 1.6rem;
         }
       }
     }
