@@ -634,7 +634,8 @@ h4.web-subtitle {
 }
 body.web__home__case,
 body.web__home__about,
-body.web__home__contact {
+body.web__home__contact,
+body.web__home__case_project {
   .return-web-navbar {
     background: image-url('resever-header-bg.png') no-repeat;
     background-size: 100% 100%;
@@ -665,4 +666,84 @@ body.web__home__contact {
 }
 .top-50 {
   margin-top: 50px;
+}
+
+body.web__home__case_project {
+  ul.web-ad-list {
+    display: flex;
+    margin: 100px auto 50px;
+    padding: 0;
+    li {
+      display: flex;
+      flex: 1;
+      margin: 0 2.5%;
+      a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        &:hover {
+          text-decoration: none;
+          img {
+            -webkit-filter: grayscale(0);
+            -moz-filter: grayscale(0);
+            -ms-filter: grayscale(0);
+            -o-filter: grayscale(0);
+            filter: grayscale(0);
+            filter: inherit;
+          }
+        }
+        cursor: pointer;
+        img,
+        h4,
+        h5 {
+          display: flex;
+          justify-content: center;
+          color: #666;
+        }
+        img {
+          width: 160px;
+          height: 80px;
+          -webkit-filter: grayscale(100%);
+          -moz-filter: grayscale(100%);
+          -ms-filter: grayscale(100%);
+          -o-filter: grayscale(100%);
+          filter: grayscale(100%);
+          filter: gray;
+        }
+        h4 {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+  @media (min-width: 750px) and (max-width: 992px) {
+    ul.web-ad-list {
+      li {
+        margin: 0 1.5%;
+        a {
+          img {
+            width: 112px;
+            height: 56px;
+          }
+          h4,
+          h5 {
+            font-size: 1.2rem;
+          }
+        }
+      }
+    }
+  }
+  @media only screen and (max-width: 750px) {
+    ul.web-ad-list {
+      flex-flow: row wrap;
+      align-content: flex-start;
+      li {
+          display: flex;
+          justify-content: center;
+          flex: 0 0 50%;
+          margin: 0;
+      }
+    }
+  }
 }
