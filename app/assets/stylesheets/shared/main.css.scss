@@ -1,23 +1,30 @@
 // 导航
 .return-web-navbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  width: 100%;
+  opacity: 0.9;
   margin-bottom: 0;
   .container {
     .navbar-header {
-      a.navbar-brand {
-        padding: 10px 15px;
-        img {
-          height: 30px;
-        }
+      .navbar-brand {
+        width: 80px;
+        height: 42px;
       }
     }
     .return-web-navbar-collapse {
       ul {
         li {
           a {
+            margin-top: 8px;
+            margin-bottom: 10px;
             margin-left: 15px;
             margin-right: 15px;
-            padding-left: 0;
-            padding-right: 0;
+            padding: 6px 0 6px 0;
+            // padding-left: 0;
+            // padding-right: 0;
             &:hover {
               background-color: transparent;
             }
@@ -25,6 +32,18 @@
               box-shadow: 0 4px 0 red;
             }
           }
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 768px) {
+  .return-web-navbar {
+    .container {
+      .navbar-header {
+        .navbar-brand {
+          margin: 0 15px;
+          width: 56px;
         }
       }
     }
@@ -215,17 +234,15 @@ h4.web-subtitle {
   }
 }
 .footer-bottom {
-  margin-top: 42px;
+  margin: 42px 0 0;
   padding: 16px 0;
+  width: 100%;
   color: #fff;
   background-color: black;
 }
 @media only screen and (max-width: 750px) {
   .footer-web {
     .footer-top {
-      &.bg-red {
-        background-color: #E70505;
-      }
       .footer-top-content {
         padding: 0 10px;
         text-align: center;
@@ -244,4 +261,408 @@ h4.web-subtitle {
       }
     }
   }
+}
+
+// case
+.pic-wrap1,
+.pic-wrap2,
+.pic-wrap3 {
+  position: relative;
+  margin: 0 1vw;
+  padding: 0;
+  a.pic-link {
+    position: absolute;
+    cursor: pointer;
+    overflow: hidden;
+    img {
+      width: 100%;
+    }
+  }
+}
+.pic-top {
+  margin-top: 1vw;
+}
+.pic-wrap1 {
+  height: 65vw;
+  a.pic-link {
+    &.pic-a {
+      top: 0;
+      left: 0;
+      width: 15.5vw;
+      height: 32vw;
+    }
+    &.pic-b {
+      top: 0;
+      left: 16.5vw;
+      width: 48.5vw;
+      height: 32vw;
+    }
+    &.pic-c {
+      top: 0;
+      left: 66vw;
+      width: 15.5vw;
+      height: 15.5vw;
+    }
+    &.pic-d {
+      top: 0;
+      left: 82.5vw;
+      width: 15.5vw;
+      height: 15.5vw;
+    }
+    &.pic-e {
+      top: 33vw;
+      left: 0;
+      width: 48.5vw;
+      height: 32vw;
+    }
+    &.pic-f {
+      top: 33vw;
+      left: 49.5vw;
+      width: 15.5vw;
+      height: 15.5vw;
+    }
+    &.pic-g {
+      top: 16.5vw;
+      left: 66vw;
+      width: 15.5vw;
+      height: 32vw;
+    }
+    &.pic-h {
+      top: 16.5vw;
+      left: 82.5vw;
+      width: 15.5vw;
+      height: 15.5vw;
+    }
+    &.pic-i {
+      top: 33vw;
+      left: 82.5vw;
+      width: 15.5vw;
+      height: 15.5vw;
+    }
+    &.pic-j {
+      top: 49.5vw;
+      left: 49.5vw;
+      width: 32vw;
+      height: 15.5vw;
+    }
+    &.pic-k {
+      top: 49.5vw;
+      left: 82.5vw;
+      width: 15.5vw;
+      height: 15.5vw;
+    }
+  }
+}
+.pic-wrap2 {
+  height: 32vw;
+  a.pic-link {
+    &.pic-a {
+      top: 0;
+      left: 0;
+      width: 32vw;
+      height: 15.5vw;
+    }
+    &.pic-b {
+      top: 0;
+      left: 33vw;
+      width: 48.5vw;
+      height: 32vw;
+    }
+    &.pic-c {
+      top: 0;
+      left: 82.5vw;
+      width: 15.5vw;
+      height: 15.5vw;
+    }
+    &.pic-d {
+      top: 16.5vw;
+      left: 0;
+      width: 15.5vw;
+      height: 15.5vw;
+    }
+    &.pic-e {
+      top: 16.5vw;
+      left: 16.5vw;
+      width: 15.5vw;
+      height: 15.5vw;
+    }
+    &.pic-f {
+      top: 16.5vw;
+      left: 82.5vw;
+      width: 15.5vw;
+      height: 15.5vw;
+    }
+  }
+}
+.pic-wrap3 {
+  height: 48.5vw;
+  a.pic-link {
+    &.pic-a {
+      top: 0;
+      left: 0;
+      width: 32vw;
+      height: 48.5vw;
+    }
+    &.pic-b {
+      top: 0;
+      left: 33vw;
+      width: 15.5vw;
+      height: 15.5vw;
+    }
+    &.pic-c {
+      top: 0;
+      left: 49.5vw;
+      width: 48.5vw;
+      height: 32vw;
+    }
+    &.pic-d {
+      top: 16.5vw;
+      left: 33vw;
+      width: 15.5vw;
+      height: 15.5vw;
+    }
+    &.pic-e {
+      top: 33vw;
+      left: 33vw;
+      width: 32vw;
+      height: 15.5vw;
+    }
+    &.pic-f {
+      top: 33vw;
+      left: 66vw;
+      width: 15.5vw;
+      height: 15.5vw;
+    }
+    &.pic-g {
+      top: 33vw;
+      left: 82.5vw;
+      width: 15.5vw;
+      height: 15.5vw;
+    }
+  }
+}
+
+@media only screen and (min-width: 1170px) {
+  .web-container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    width: 1140px;
+  }
+  .pic-top {
+    margin-top: 12px;
+  }
+  .pic-wrap1,
+  .pic-wrap2,
+  .pic-wrap3 {
+    position: relative;
+    a.pic-link {
+      position: absolute;
+      cursor: pointer;
+      overflow: hidden;
+    }
+  }
+  .pic-wrap1 {
+    height: 756px;
+    a.pic-link {
+      position: absolute;
+      cursor: pointer;
+      overflow: hidden;
+        &.pic-a {
+          top: 0;
+          left: 0;
+          width: 180px;
+          height: 372px;
+        }
+        &.pic-b {
+          top: 0;
+          left: 192px;
+          width: 564px;
+          height: 372px;
+        }
+        &.pic-c {
+          top: 0;
+          left: 768px;
+          width: 180px;
+          height: 180px;
+        }
+        &.pic-d {
+          top: 0;
+          left: 960px;
+          width: 180px;
+          height: 180px;
+        }
+        &.pic-e {
+          top: 384px;
+          left: 0;
+          width: 564px;
+          height: 372px;
+        }
+        &.pic-f {
+          top: 384px;
+          left: 576px;
+          width: 180px;
+          height: 180px;
+        }
+        &.pic-g {
+          top: 192px;
+          left: 768px;
+          width: 180px;
+          height: 372px;
+        }
+        &.pic-h {
+          top: 192px;
+          left: 960px;
+          width: 180px;
+          height: 180px;
+        }
+        &.pic-i {
+          top: 384px;
+          left: 960px;
+          width: 180px;
+          height: 180px;
+        }
+        &.pic-j {
+          top: 576px;
+          left: 576px;
+          width: 372px;
+          height: 180px;
+        }
+        &.pic-k {
+          top: 576px;
+          left: 960px;
+          width: 180px;
+          height: 180px;
+        }
+    }
+  }
+
+  .pic-wrap2 {
+    height: 372px;
+    a.pic-link {
+      &.pic-a {
+        top: 0;
+        left: 0;
+        width: 372px;
+        height: 180px;
+      }
+      &.pic-b {
+        top: 0;
+        left: 384px;
+        width: 564px;
+        height: 372px;
+      }
+      &.pic-c {
+        top: 0;
+        left: 960px;
+        width: 180px;
+        height: 180px;
+      }
+      &.pic-d {
+        top: 192px;
+        left: 0;
+        width: 180px;
+        height: 180px;
+      }
+      &.pic-e {
+        top: 192px;
+        left: 192px;
+        width: 180px;
+        height: 180px;
+      }
+      &.pic-f {
+        top: 192px;
+        left: 960px;
+        width: 180px;
+        height: 180px;
+      }
+    }
+  }
+  .pic-wrap3 {
+    height: 564px;
+    a.pic-link {
+      &.pic-a {
+        top: 0;
+        left: 0;
+        width: 372px;
+        height: 564px;
+      }
+      &.pic-b {
+        top: 0;
+        left: 384px;
+        width: 180px;
+        height: 180px;
+      }
+      &.pic-c {
+        top: 0;
+        left: 576px;
+        width: 564px;
+        height: 372px;
+      }
+      &.pic-d {
+        top: 192px;
+        left: 384px;
+        width: 180px;
+        height: 180px;
+      }
+      &.pic-e {
+        top: 384px;
+        left: 384px;
+        width: 372px;
+        height: 180px;
+      }
+      &.pic-f {
+        top: 384px;
+        left: 768px;
+        width: 180px;
+        height: 180px;
+      }
+      &.pic-g {
+        top: 384px;
+        left: 960px;
+        width: 180px;
+        height: 180px;
+      }
+    }
+  }
+}
+
+ // 导航
+.navbar {
+  border: 0;
+}
+body.web__home__case,
+body.web__home__about,
+body.web__home__contact {
+  .return-web-navbar {
+    background: image-url('resever-header-bg.png') no-repeat;
+    background-size: 100% 100%;
+    .container {
+      .navbar-header {
+        .navbar-brand {
+          background: image-url('resever-header-logo.png') center center no-repeat;
+          background-size: contain;
+        }
+      }
+      .return-web-navbar-collapse {
+        ul {
+          li {
+            a {
+              color: #000;
+              font-weight: 600;
+              &:hover {}
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.top-20 {
+  margin-top: 20px;
+}
+.top-50 {
+  margin-top: 50px;
 }

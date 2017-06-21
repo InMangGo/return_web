@@ -5,18 +5,15 @@
 body.web__home__index {
   // 导航
   .return-web-navbar {
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 10;
-    width: 100%;
-
-    background: image-url('header-bg.png');
-    background-repeat: no-repeat;
+    background: image-url('header-bg.png') no-repeat;
     background-size: 100% 100%;
-    opacity: 0.9;
     .container {
-      .navbar-header {}
+      .navbar-header {
+        .navbar-brand {
+          background: image-url('header-logo.png') center center no-repeat;
+          background-size: contain;
+        }
+      }
       .return-web-navbar-collapse {
         ul {
           li {
@@ -147,6 +144,12 @@ body.web__home__index {
       }
     }
   }
+
+  .jumbotron {
+    background-color: #E70505;
+  }
+
+
 }
 
 @media only screen and (max-width: 1200px) {

@@ -10,9 +10,10 @@
   </head>
 
   <body class="<%= html_body_classes %>">
-    <%= render "header" %>
+    <%= render "web/application/header" %>
     <%= yield %>
-    <%= render "footer" %>
+    <%= render "web/application/footer" %>
+    <%= render "web/application/bottom" %>
     <%= javascript_include_tag 'application' %>
     <%= yield :page_js %>
   </body>
