@@ -635,7 +635,8 @@ h4.web-subtitle {
 body.web__home__case,
 body.web__home__about,
 body.web__home__contact,
-body.web__home__case_project {
+body.web__home__case_project,
+body.web__home__case_video {
   .return-web-navbar {
     background: image-url('resever-header-bg.png') no-repeat;
     background-size: 100% 100%;
@@ -668,7 +669,8 @@ body.web__home__case_project {
   margin-top: 50px;
 }
 
-body.web__home__case_project {
+body.web__home__case_project,
+body.web__home__case_video {
   ul.web-ad-list {
     display: flex;
     margin: 100px auto 50px;

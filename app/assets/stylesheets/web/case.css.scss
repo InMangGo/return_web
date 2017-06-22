@@ -6,6 +6,32 @@ body.web__home__case {
   }
 }
 
-body.web__home__case_project {
-  
+body.web__home__case_video {
+  .video-content {
+    .row {
+      margin-bottom: 30px;
+      &:last-child {
+        margin-bottom: 0;
+      }
+      .col-sm-8,
+      .col-sm-4 {
+        img {
+          position: relative;
+          width: 100%;
+          height: 380px;
+        }
+      }
+      .col-sm-8 {
+        a {
+          .video-play {
+            position: absolute;
+            top: 45%;
+            left: 45%;
+            width: 70px;
+            height: 70px;
+          }
+        }
+      }
+    }
+  }
 }
